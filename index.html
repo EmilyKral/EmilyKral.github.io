@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Resources/CSS/index.css">
+    <link rel="stylesheet" href="./Resources/CSS/styles.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,24 +20,24 @@
         <h1>Emily Kral</h1>
 
         <nav>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Languages</li>
-            <li>Contact</li>
+            <li><a href='./index.html' class='current-page'>About</a></li>
+            <li><a href='./contact.html' class='linked-page'>Contact</a></li>
         </nav>
     </header>
 
     <main>
-        <!-- About section -->
-        <section id='about'>
-            <h2>About Me</h2>
+        <!-- Biography section -->
+        <section id='bio'>
+            <h2>Biography</h2>
             <div class='container'>
-                <img src="./Resources/Images/Emily Kral.JPG" alt="Image of Emily Kral">
-                <div>
-                    <p>My name is Emily Kral, I am 23 years old and from the Isle of Wight.</p>
+                <div class='image'>
+                    <img src="./Resources/Images/Emily Kral.JPG" alt="Image of Emily Kral" id='portrait'>
+                </div>
+                <div class='text'>
+                    <p>Hello! My name is Emily Kral, I am 23 years old and from the Isle of Wight.</p>
                     <p>In July 2020 I graduated from the University of York with a degree in Mathematics. In my third year of studying I took part in the Erasmus programme and moved to Spain for the year to study maths at the Universidad Autonoma de Madrid.</p>
                     <p>I am currently taking a Codecademy Career Path in Front End Development and am really enjoying it. When I was younger I wanted to be a graphic designer so this has been a lovely way to combine my interests in both STEM and design.</p>
-                    <p>In my spare time I love to bake very chocolatey cakes, watch films, and go on walks along the beach near my house. I used to be a competitive swimmer and still swim regularly, just not nearly as fast.</p>
+                    <p>In my spare time I love to bake very chocolatey cakes, watch all sorts of films, and go on walks along the beach near my house. I used to be a competitive swimmer and still swim regularly, just not nearly as fast.</p>
                 </div>
             </div>
         </section>
@@ -48,7 +48,7 @@
             <p>Here are some of the programming projects I have completed, all designed and built entirely by myself using skills developed on the Codecademy Career Path.</p>
 
             <h3>Portfolio Website</h3>
-            <p>This website is my biggest project to date and involves using HTML, CSS and JavaScript to make an informative and interactive website all about me. The code for this website can be viewed on Github</p>
+            <p>This website is my biggest project to date and involves using HTML, CSS and JavaScript to make an informative and interactive website to use as an online portfolio. The code for this website can be viewed on Github, <a href='https://github.com/EmilyKral/EmilyKral.github.io' target="_blank">here</a>.</p>
 
             <h3>Flexbox Business Project</h3>
             <p>This project involved making a home page for a business that I made up. I used the CSS flexbox property to make the web page responsive to different sizes of screen. You can view the finished product on Github. The web page is linked <a href="https://emilykral.github.io/ButtercupBakery/" target='_blank'>here</a> and the code is linked <a href="https://github.com/EmilyKral/ButtercupBakery" target='_blank'>here</a>.</p>
@@ -57,11 +57,6 @@
         <!-- Languages section-->
         <section id='languages'>
             <h2>Languages</h2>
-        </section>
-
-        <!-- Contact section -->
-        <section id='contact'>
-            <h2>Contact Details</h2>
         </section>
     </main>
 

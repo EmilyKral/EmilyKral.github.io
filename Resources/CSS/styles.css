@@ -1,4 +1,5 @@
 /* general styles */
+
 html * {
 	box-sizing: border-box;
 }
@@ -10,6 +11,11 @@ body {
 	font-size: 16px;
 }
 
+main {
+	max-width: 910px;
+	margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -18,7 +24,39 @@ h3 {
 
 h2 {
 	font-size: 2rem;
+}
+
+h2,
+h3 {
+	margin: 20px;
+}
+
+.text {
+	background-color: hsl(120, 31%, 57%);
+	border-radius: 10px;
+	padding: 0.1px 15px;
 	margin: 10px;
+	overflow: auto;
+}
+
+.image-div {
+	margin: 0 10px;
+	border-radius: 10px;
+}
+
+.introduction {
+	margin: 20px;
+}
+
+@media only screen and (min-width: 431px) {
+	.container {
+		display: inline-flex;
+		justify-content: left;
+	}
+
+	.container .text {
+		margin: 0 10px 0 5px;
+	}
 }
 
 /* header */
@@ -108,44 +146,29 @@ nav a:visited {
 
 footer {
 	background-color: hsl(120, 31%, 57%);
+	height: 50px;
 }
 
 /* biography */
 
 #portrait {
-	object-fit: contain;
+	object-fit: cover;
 	width: 100%;
+	max-height: 300px;
+	object-position: 0 25%;
 	border-radius: 10px;
-}
-
-#bio .image {
-	padding: 0 10px;
-}
-
-#bio .container .text {
-	background-color: hsl(120, 31%, 57%);
-	border-radius: 10px;
-	padding: 0.1px 15px;
-	margin: 10px;
 }
 
 @media only screen and (min-width: 431px) and (max-width: 910px) {
-	#bio .container {
-		display: inline-flex;
-		justify-content: left;
-	}
-
 	#bio .container .text {
 		width: 80%;
-		max-height: 266.656px;
+		max-height: 270px;
 		max-width: 680px;
-		margin: 0 10px 0 5px;
-		overflow: scroll;
 	}
 
-	#bio .image {
+	#bio .image-div {
 		width: 20%;
-		min-width: 200px;
+		min-width: 202px;
 		margin: 0 5px 0 10px;
 		padding: 0;
 	}
@@ -156,19 +179,13 @@ footer {
 		margin: auto;
 	}
 
-	#bio .container {
-		display: inline-flex;
-		justify-content: left;
-	}
-
 	#bio .container .text {
-		height: 266.656px;
+		height: 270px;
 		width: 680px;
-		margin: 0 10px 0 5px;
 	}
 
-	#bio .image {
-		width: 200px;
+	#bio .image-div {
+		width: 202px;
 		margin: 0 5px 0 10px;
 		padding: 0;
 	}
@@ -176,6 +193,64 @@ footer {
 
 /* projects */
 
+.screenshot {
+	border-radius: 10px;
+	object-fit: cover;
+	width: 100%;
+	max-height: 300px;
+	object-position: top;
+}
+
+@media only screen and (min-width: 431px) and (max-width: 910px) {
+	.screenshot {
+		height: 222px;
+	}
+
+	#projects .image-div {
+		width: 50%;
+		overflow: hidden;
+	}
+
+	#projects .text {
+		width: 50%;
+		height: 222px;
+	}
+}
+
+@media only screen and (min-width: 911px) {
+	#projects-layout {
+		display: inline-flex;
+	}
+
+	.project {
+		width: 50%;
+		max-width: 500px;
+		padding: 0 20px;
+	}
+
+	#projects .container {
+		display: inline;
+	}
+
+	#projects .text {
+		margin: 10px 10px 0 10px;
+		height: 165px;
+	}
+}
+
 /* languages */
+
+#languages {
+	margin-bottom: 20px;
+}
+
+.fab {
+	font-size: 5rem;
+	margin-right: 20px;
+}
+
+#icons {
+	margin-left: 20px;
+}
 
 /* contact */

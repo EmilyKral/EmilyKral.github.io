@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/938314fc60.js" crossorigin="anonymous"></script>
 
     <title>Emily Kral online portfolio</title>
 </head>
@@ -30,7 +31,7 @@
         <section id='bio'>
             <h2>Biography</h2>
             <div class='container'>
-                <div class='image'>
+                <div class='image-div'>
                     <img src="./Resources/Images/Emily Kral.JPG" alt="Image of Emily Kral" id='portrait'>
                 </div>
                 <div class='text'>
@@ -45,18 +46,37 @@
         <!-- Projects section -->
         <section id='projects'>
             <h2>Programming Projects</h2>
-            <p>Here are some of the programming projects I have completed, all designed and built entirely by myself using skills developed on the Codecademy Career Path.</p>
+            <p class='introduction'>Here are some of the programming projects I have completed, all designed and built entirely by myself using skills developed on the Codecademy Career Path.</p>
 
-            <h3>Portfolio Website</h3>
-            <p>This website is my biggest project to date and involves using HTML, CSS and JavaScript to make an informative and interactive website to use as an online portfolio. The code for this website can be viewed on Github, <a href='https://github.com/EmilyKral/EmilyKral.github.io' target="_blank">here</a>.</p>
+            <div id='projects-layout'>
+                <div class='project'>
+                    <h3>Portfolio Website</h3>
+                    <div class='container'>
+                        <div class='image-div'><img src="./Resources/Images/PortfolioScreenshot.png" alt="Screenshot of project web page" class='screenshot'></div>
+                        <div class='text'><p>This website is my biggest project to date and involves using HTML, CSS and JavaScript to make an informative and interactive website to use as an online portfolio. The code for this website can be viewed on Github, <a href='https://github.com/EmilyKral/EmilyKral.github.io' target="_blank">here</a>.</p></div>
+                    </div>
+                </div>
 
-            <h3>Flexbox Business Project</h3>
-            <p>This project involved making a home page for a business that I made up. I used the CSS flexbox property to make the web page responsive to different sizes of screen. You can view the finished product on Github. The web page is linked <a href="https://emilykral.github.io/ButtercupBakery/" target='_blank'>here</a> and the code is linked <a href="https://github.com/EmilyKral/ButtercupBakery" target='_blank'>here</a>.</p>
+                <div class='project'>
+                    <h3>Flexbox Business Project</h3>
+                    <div class='container'>
+                        <div class='image-div'><img src="./Resources/Images/BakeryScreenshot.png" alt="Screenshot of project web page" class='screenshot'></div>
+                        <div class='text'><p>This project involved making a home page for a business that I made up. I used the CSS flexbox property to make the web page responsive to different sizes of screen. You can view the finished product on Github, the web page is linked <a href="https://emilykral.github.io/ButtercupBakery/" target='_blank'>here</a> and the code is linked <a href="https://github.com/EmilyKral/ButtercupBakery" target='_blank'>here</a>.</p></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Languages section-->
         <section id='languages'>
             <h2>Languages</h2>
+            <p class='introduction'>Through Codecademy I have learnt to use a number of programming languages, listed below.</p>
+            <div id='icons'>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-python"></i>
+            </div>
         </section>
     </main>
 

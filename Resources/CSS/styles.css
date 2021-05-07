@@ -68,6 +68,14 @@ i {
 	margin: 0 15px;
 }
 
+a {
+	color: black;
+}
+
+a:hover {
+	font-weight: 600;
+}
+
 @media only screen and (min-width: 431px) {
 	.container {
 		display: inline-flex;
@@ -282,17 +290,14 @@ footer {
 
 /* contact */
 
-.flex-wrapper {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-	justify-content: space-between;
+.contacts {
+	text-align: center;
+	width: 100%;
 }
 
 .contact-type {
-	display: inline-flex;
-	width: 100%;
 	align-items: center;
+	margin: 30px auto;
 }
 
 .contact-type h3 {
@@ -305,5 +310,36 @@ footer {
 
 .contact-type i {
 	width: 80px;
-	text-align: center;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 729px) {
+	.contacts {
+		text-align: left;
+		width: auto;
+	}
+
+	.contact-type {
+		display: inline-flex;
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.contact-type i {
+		text-align: center;
+	}
+
+	.contact-text {
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (min-width: 730px) {
+	.contact-type {
+		display: inline;
+		margin: 0 20px;
+	}
+
+	.contacts {
+		display: flex;
+	}
 }

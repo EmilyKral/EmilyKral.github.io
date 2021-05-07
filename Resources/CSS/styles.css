@@ -1,3 +1,11 @@
+/* general styles: line 11 */
+/* header: line */
+/* footer: line */
+/* biography: line */
+/* projects: line */
+/* languages: line */
+/* contact: line */
+
 /* general styles */
 
 html * {
@@ -7,12 +15,19 @@ html * {
 body {
 	margin: 0;
 	font-family: Montserrat, sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#footer-spacer {
+	flex-grow: 1;
 }
 
 main {
-	max-width: 910px;
+	max-width: 930px;
 	margin: 0 auto;
 }
 
@@ -32,7 +47,7 @@ h3 {
 }
 
 .text {
-	background-color: hsl(120, 31%, 57%);
+	background-color: hsl(129, 34%, 61%);
 	border-radius: 10px;
 	padding: 0.1px 15px;
 	margin: 10px;
@@ -48,6 +63,11 @@ h3 {
 	margin: 20px;
 }
 
+i {
+	font-size: 5rem;
+	margin: 0 15px;
+}
+
 @media only screen and (min-width: 431px) {
 	.container {
 		display: inline-flex;
@@ -58,11 +78,10 @@ h3 {
 		margin: 0 10px 0 5px;
 	}
 }
-
 /* header */
 
 header {
-	background-color: hsl(120, 31%, 57%);
+	background-color: hsl(129, 34%, 61%);
 	width: 100%;
 	height: 125px;
 	position: sticky;
@@ -113,7 +132,7 @@ nav a:visited {
 }
 
 .current-page {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 @media only screen and (min-width: 431px) {
@@ -145,8 +164,18 @@ nav a:visited {
 /* footer */
 
 footer {
-	background-color: hsl(120, 31%, 57%);
+	background-color: hsl(129, 34%, 61%);
 	height: 50px;
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+#footer-text {
+	text-align: right;
+	margin-right: 20px;
+	font-size: 14px;
 }
 
 /* biography */
@@ -159,11 +188,11 @@ footer {
 	border-radius: 10px;
 }
 
-@media only screen and (min-width: 431px) and (max-width: 910px) {
+@media only screen and (min-width: 431px) and (max-width: 930px) {
 	#bio .container .text {
 		width: 80%;
 		max-height: 270px;
-		max-width: 680px;
+		max-width: 700px;
 	}
 
 	#bio .image-div {
@@ -174,14 +203,14 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 911px) {
+@media only screen and (min-width: 931px) {
 	#bio {
 		margin: auto;
 	}
 
 	#bio .container .text {
 		height: 270px;
-		width: 680px;
+		width: 700px;
 	}
 
 	#bio .image-div {
@@ -240,17 +269,41 @@ footer {
 
 /* languages */
 
-#languages {
-	margin-bottom: 20px;
-}
-
-.fab {
-	font-size: 5rem;
-	margin-right: 20px;
-}
-
 #icons {
-	margin-left: 20px;
+	margin-left: 10px;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.icon p {
+	text-align: center;
+	margin-top: 8px;
 }
 
 /* contact */
+
+.flex-wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact-type {
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+}
+
+.contact-type h3 {
+	margin: 10px 0;
+}
+
+.contact-type p {
+	margin: 10px 0;
+}
+
+.contact-type i {
+	width: 80px;
+	text-align: center;
+}

@@ -1,10 +1,10 @@
 /* general styles: line 11 */
-/* header: line */
-/* footer: line */
-/* biography: line */
-/* projects: line */
-/* languages: line */
-/* contact: line */
+/* header: line 90 */
+/* footer: line 173 */
+/* biography: line 190 */
+/* projects: line 232 */
+/* languages: line 279 */
+/* contact: line 292 */
 
 /* general styles */
 
@@ -86,6 +86,7 @@ a:hover {
 		margin: 0 10px 0 5px;
 	}
 }
+
 /* header */
 
 header {
@@ -196,6 +197,15 @@ footer {
 	border-radius: 10px;
 }
 
+.photo-link {
+	font-weight: 600;
+}
+
+.photo-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 @media only screen and (min-width: 431px) and (max-width: 930px) {
 	#bio .container .text {
 		width: 80%;
@@ -290,6 +300,10 @@ footer {
 
 /* contact */
 
+#contact h2 {
+	text-align: center;
+}
+
 .contacts {
 	text-align: center;
 	width: 100%;
@@ -312,16 +326,21 @@ footer {
 	width: 80px;
 }
 
-@media only screen and (min-width: 380px) and (max-width: 729px) {
+@media only screen and (min-width: 430px) and (max-width: 729px) {
+	#contact h2 {
+		text-align: left;
+	}
+
 	.contacts {
 		text-align: left;
 		width: auto;
+		margin-left: 20px;
 	}
 
 	.contact-type {
 		display: inline-flex;
 		width: 100%;
-		margin: 20px auto;
+		margin-top: 0;
 	}
 
 	.contact-type i {
@@ -334,6 +353,10 @@ footer {
 }
 
 @media only screen and (min-width: 730px) {
+	#contact h2 {
+		text-align: left;
+	}
+
 	.contact-type {
 		display: inline;
 		margin: 0 20px;
@@ -341,5 +364,23 @@ footer {
 
 	.contacts {
 		display: flex;
+		width: 710px;
+		justify-content: space-around;
+	}
+
+	.contact-text a {
+		margin: 0 4.5px;
+	}
+
+	.center:hover {
+		margin: 0;
+	}
+
+	.left:hover {
+		margin: 0 2px 0 2.5px;
+	}
+
+	.right:hover {
+		margin: 0 2.5px 0 2px;
 	}
 }

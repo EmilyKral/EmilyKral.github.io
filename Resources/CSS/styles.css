@@ -29,6 +29,7 @@ body {
 main {
 	max-width: 930px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 h1,
@@ -178,7 +179,6 @@ footer {
 	align-items: center;
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 20px;
 }
 
 #footer-text {
@@ -204,6 +204,43 @@ footer {
 .photo-link:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.photo {
+	width: 80%;
+	max-width: 700px;
+	margin: 190px auto 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	display: none;
+}
+
+.photo img {
+	width: 100%;
+	object-fit: contain;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black, 0 0 10px black;
+}
+
+.photo p {
+	text-align: center;
+	margin: 10px;
+}
+
+.photo .text {
+	padding: 0;
+	margin: 5px auto 0 auto;
+	box-shadow: 5px 5px 10px black, 0 0 10px black;
+}
+
+#dark-layer {
+	background-color: rgba(0, 0, 0, 0.65);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
 }
 
 @media only screen and (min-width: 431px) and (max-width: 930px) {

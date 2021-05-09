@@ -1,10 +1,10 @@
 /* general styles: line 11 */
-/* header: line 90 */
-/* footer: line 173 */
+/* header: line 91 */
+/* footer: line 174 */
 /* biography: line 190 */
-/* projects: line 232 */
-/* languages: line 279 */
-/* contact: line 292 */
+/* projects: line 278 */
+/* languages: line 325 */
+/* contact: line 338 */
 
 /* general styles */
 
@@ -418,6 +418,6 @@ footer {
 	}
 
 	.right:hover {
-		margin: 0 2.5px 0 2px;
+		margin: 0 2px 0 2px;
 	}
 }
